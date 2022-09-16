@@ -24,11 +24,13 @@
 .benefits-items {
     display: flex;
     justify-content: space-between;
+
+    &:not(:first-child) {
+            margin-left: 30px;
+        }
 }
 
-.benefits-container:not(:first-child) {
-    margin-left: 30px;
-}
+
 
 .benefits-card__iconbox {
     width: 270px;

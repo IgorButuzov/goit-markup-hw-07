@@ -35,12 +35,12 @@
     padding-top: 32px;
     padding-bottom: 32px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav-items__link:hover,
-.nav-items__link:focus {
-    color: var(--hover-color);
-
+    
+    &:hover,
+    &:focus {
+            color: var(--hover-color);
+    
+        }
 }
 
 .navline::after {
@@ -58,22 +58,6 @@
     color: var(--hover-color);
 }
 
-.header-mail__icon:hover,
-.header-tel__icon:hover,
-.header-mail__icon:focus,
-.header-tel__icon:focus,
-.contact-list:hover,
-.contact-list:focus,
-.contact-link:hover,
-.contact-link:focus,
-.header-mail:hover,
-.header-mail:focus,
-.header-tel:hover,
-.header-tel:focus {
-    color: var(--hover-color);
-    fill: var(--hover-color);
-}
-
 .header-contacts {
     display: flex;
     margin-left: auto;
@@ -86,6 +70,12 @@
     height: 12px;
     margin-right: 10px;
     fill: currentColor;
+
+    &:hover,
+    &:focus {
+            color: var(--hover-color);
+            fill: var(--hover-color);
+        }
 }
 
 .header-tel__icon {
@@ -93,9 +83,35 @@
     height: 16px;
     margin-right: 10px;
     fill: currentColor;
+
+    &:hover,
+    &:focus {
+            color: var(--hover-color);
+            fill: var(--hover-color);
+        }
 }
 
-.header-mail,
+.header-mail{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--p-color);
+        padding-top: 32px;
+        padding-bottom: 32px;
+        display: flex;
+        align-items: center;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+                color: var(--hover-color);
+                fill: var(--hover-color);
+            }
+    }
+
 .header-tel {
     font-style: normal;
     font-weight: 500;
@@ -109,6 +125,12 @@
     align-items: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            color: var(--hover-color);
+            fill: var(--hover-color);
+        }
 }
 
 .header-container {

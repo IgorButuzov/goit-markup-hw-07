@@ -7,13 +7,13 @@
     text-align: center;
     background: var(--textwhite-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
+                0px 1px 1px rgba(0, 0, 0, 0.14),
+                0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-}
 
-.specialist-card:not(:first-child) {
-    margin-left: 30px;
+    &:not(:first-child) {
+            margin-left: 30px;
+        }
 }
 
 .specialists {
@@ -52,13 +52,13 @@
     cursor: pointer;
     color: #AFB1B8;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+                color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.specialistlink:hover,
-.specialistlink:focus {
-    background-color: var(--hover-color);
-    color: var(--textwhite-color);
+    &:hover,
+    &:focus {
+            background-color: var(--hover-color);
+            color: var(--textwhite-color);
+            }
 }
 
 .specialistlink-items {
